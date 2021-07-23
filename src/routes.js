@@ -1,9 +1,9 @@
 import React from 'react'
 import { Route, Switch, BrowserRouter } from 'react-router-dom'
 
-import Home from './pages/Home'
+import Home from  './pages/Home'
 import SingIn from './pages/SingIn'
-import Products from './pages/Products'
+import Products from './pages/Product'
 
 
 export default function Router() {
