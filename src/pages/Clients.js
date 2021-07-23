@@ -10,6 +10,26 @@ export default function SingIn() {
    const [email, setEmail] = useState('')
    const [telefone, setTelefone] = useState('')
 
+   function cadastrarClient(event) {
+      event.preventDefault()
+      let clients = JSON.parse(localStorage.getItem('Cliente') || '[]')
+      clients.push({
+         Nome: nome,
+         CPF: cpf,
+         Email: email,
+         Telefone: telefone,
+      })
+
+      localStorage.setItem('Cliente', JSON.stringify(clients))
+      clearFrom()
+   }
+
+   function clearFrom() {
+      setNome('')
+      setCpf('')
+      setEmail('')
+      setTelefone('')
+   }
 
    return (
       <div className="card-container">
@@ -26,7 +46,7 @@ export default function SingIn() {
             <label className="label-client"  htmlFor="telefone">Telefone</label>
             <InputMask value={telefone} onChange={(event) => setTelefone(event.target.value)} mask="(99) 9 9999-9999" className="input-client" id="telefone" type="tel" placeholder="Digite seu telefone com o DDD"></InputMask>
 
-            <button type="submit" className="card-button-cadastrar-client">Cadastrar cliente</button>
+            <button type="submit" className="card-button-cadastrar-client" onClick={cadastrarClient} >Cadastrar cliente</button>
             <Link className="card-button-voltar" to="/"> &lt; Voltar</Link>
 
             

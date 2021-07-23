@@ -15,7 +15,7 @@ export default function SingIn() {
    
    function cadastrarProduct(event) {
       event.preventDefault()
-      let products = JSON.parse(localStorage.getItem('Produtos') || '[]')
+      let products = JSON.parse(localStorage.getItem('Produto') || '[]')
       products.push({
          Nome: produto,
          Categoria: categoria,
@@ -24,7 +24,7 @@ export default function SingIn() {
          Quantidade: quantidade
       })
 
-      localStorage.setItem('Produtos', JSON.stringify(products))
+      localStorage.setItem('Produto', JSON.stringify(products))
       clearFrom()
    }
 
