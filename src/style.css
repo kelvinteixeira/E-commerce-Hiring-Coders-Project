@@ -50,6 +50,7 @@ body {
    color: white;
    cursor: pointer;
    transition: ease-in-out 0.4s;
+   text-decoration: none;
 }
 
 .card-button-product {
@@ -66,6 +67,7 @@ body {
    color: white;
    cursor: pointer;
    transition: ease-in-out 0.4s;
+   text-decoration: none;
 }
 
 .card-button-client:hover {
