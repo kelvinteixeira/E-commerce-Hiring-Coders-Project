@@ -135,7 +135,7 @@ body {
    color: #FF3366;
 }
 
-.card-button-client:hover, .card-button-cadastrar:hover {
+.card-button-client:hover, .card-button-cadastrar-client:hover {
    background-color: rgb(33, 73, 148);
 }
 

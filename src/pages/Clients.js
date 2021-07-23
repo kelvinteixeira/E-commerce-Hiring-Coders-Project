@@ -5,6 +5,7 @@ import InputMask from 'react-input-mask'
 import Logo from '../assets/Vtex-logo.png'
 
 export default function SingIn() {
+
    const [nome, setNome] = useState('')
    const [cpf, setCpf] = useState('')
    const [email, setEmail] = useState('')
