@@ -12,20 +12,28 @@ export default function SingIn() {
    const [descricao, setDescricao] = useState('')
    const [preco, setPreco] = useState('')
    const [quantidade, setQuantidade] = useState('')
-   
+   const [error, setError] = useState('')
+
    function cadastrarProduct(event) {
       event.preventDefault()
-      let products = JSON.parse(localStorage.getItem('Produto') || '[]')
-      products.push({
-         Nome: produto,
-         Categoria: categoria,
-         Descrição: descricao,
-         Preço: preco,
-         Quantidade: quantidade
-      })
 
-      localStorage.setItem('Produto', JSON.stringify(products))
-      clearFrom()
+      if (produto && categoria && descricao && preco && quantidade) {
+
+         let products = JSON.parse(localStorage.getItem('Produto') || '[]')
+         products.push({
+            Nome: produto,
+            Categoria: categoria,
+            Descrição: descricao,
+            Preço: preco,
+            Quantidade: quantidade
+         })
+
+         localStorage.setItem('Produto', JSON.stringify(products))
+         clearFrom()
+         alert("Produto cadastrado com sucesso")
+      } else {
+         alert("Os dados não foram preenchidos corretamente")
+      }
    }
 
    function clearFrom() {
@@ -43,8 +51,8 @@ export default function SingIn() {
             <img src={Logo} alt="Vtex-logo" className="logo-cadastro"></img>
             <h2>Cadastro de produtos</h2>
             <p>Preencha os dados corretamente.</p>
-            <label className="label-product"  htmlFor="produto">Produto</label>
-            <input value={produto} onChange={(e)=> setProduto(e.target.value)} className="input-product" id="produto" type="text" placeholder="Digite qual o é o produto"></input>
+            <label className="label-product" htmlFor="produto">Produto</label>
+            <input value={produto} onChange={(e) => setProduto(e.target.value)} className="input-product" id="produto" type="text" placeholder="Digite qual o é o produto"></input>
 
             <label className="label-product" >Categoria</label>
             <select value={categoria} onChange={(e) => setCategoria(e.target.value)} className="input-product">
@@ -55,11 +63,11 @@ export default function SingIn() {
                <option value="outros">Outros</option>
             </select>
 
-            <label  className="label-product" htmlFor="descricao">Descrição</label>
+            <label className="label-product" htmlFor="descricao">Descrição</label>
             <textarea value={descricao} onChange={(e) => setDescricao(e.target.value)} className="input-product" id="descricao" type="text" placeholder="Especificações básicas do produto"></textarea>
-            <label  className="label-product" htmlFor="preco">Preço</label>
+            <label className="label-product" htmlFor="preco">Preço</label>
             <InputMask value={preco} onChange={(e) => setPreco(e.target.value)} className="input-product" id="preco" type="text" placeholder="Digite o valor do produto"></InputMask>
-            <label  className="label-product" htmlFor="quantidade">Quantidade em estoque</label>
+            <label className="label-product" htmlFor="quantidade">Quantidade em estoque</label>
             <input value={quantidade} onChange={(e) => setQuantidade(e.target.value)} className="input-product" id="quantidade" type="text" placeholder="Digite a quantidade disponivel"></input>
 
             <button type="submit" onClick={cadastrarProduct} className="card-button-cadastrar-product">Cadastrar produto</button>

@@ -19,7 +19,8 @@ export default function Home() {
          <div className="card-content">
             <img className="logo" src={Logo} alt="logo-vtex"></img>
             <h2>Gestão de Cadastros</h2>
-            <p>Sistema exclusivo para o gerenciamento de cadastro, escolha abaixo se você deseja cadastrar novos clientes ou novos produtos.</p>
+            <p>Sistema exclusivo para o cadastramento de novos clientes ou produtos.</p>
+            <h5>O que você deseja cadastrar?</h5>
             <button className="card-button-client" onClick={newClient} >Clientes</button>
             <button className="card-button-product" onClick={newProduct} >Produtos</button>
          </div>
