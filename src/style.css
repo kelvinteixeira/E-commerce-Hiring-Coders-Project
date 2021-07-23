@@ -70,10 +70,77 @@ body {
    text-decoration: none;
 }
 
-.card-button-client:hover {
+.card-button-cadastrar {
+   margin-top: 15px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 10px;
+   width: 200px;
+   height: 35px;
+   outline: none;
+   border: none;
+   border-radius: 15px;
+   background-color: rgb(4, 92, 255);
+   font-weight: bold;
+   color: white;
+   cursor: pointer;
+   transition: ease-in-out 0.4s;
+   text-decoration: none;
+}
+
+.card-button-voltar {
+   margin-top: 15px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 20px;
+   width: 200px;
+   height: 35px;
+   color: rgb(4, 92, 255);
+   font-weight: bold;
+   cursor: pointer;
+   transition: ease-in-out 0.4s;
+   text-decoration: none;
+   font-size: 15px;
+}
+
+.card-button-voltar:hover{
+   color: rgb(255, 0, 149);
+}
+
+.card-button-client:hover, .card-button-cadastrar:hover {
    background-color: rgb(33, 73, 148);
 }
 
 .card-button-product:hover {
    background-color: rgb(150, 33, 101);
+}
+
+h2 {
+   margin-bottom: 15px;
+}
+
+p {
+   font-size: 15px;
+   margin-bottom: 15px;
+   font-weight: bold;
+}
+
+label {
+   text-align: left;
+   margin-bottom: 5px;
+   color: rgb(4, 92, 255);
+   font-weight: bold;
+}
+
+input {
+   outline: none;
+   border: 1px solid rgb(4, 92, 255);
+   border-radius: 8px;
+   padding: 8px;
+   margin-bottom: 10px;
+}
+
+::-webkit-input-placeholder {
+   color: rgb(121, 119, 119);
+   font-weight: bold;
 }
