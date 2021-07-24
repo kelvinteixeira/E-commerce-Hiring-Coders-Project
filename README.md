@@ -5,7 +5,7 @@ https://hiringcodersecommerceproject.netlify.app/
 
 Esse projeto é uma aplicação simples em web construída durante a edição 2021 Hiring Coders, evento organizado pela [GamaAcademy](https://www.gama.academy/ "Site da Gama Academy") e [VTEX](https://vtex.com/br-pt/ "Site da VTEX")  
  
-A aplicação consiste em uma página principal com dois botões para cadastramento um para novos cliente e outro para novos produtos, ao clicar, o usuário sera direcionado para o formulário especifico, ao preencher os dados, será validado se tudo está de acordo e os dados serro armazenados no localStorage, Essa aplicação tem apenas o intuito de apredizagem e possui todos os direitos reservados.
+A aplicação consiste em uma página principal com dois botões para cadastramento, um para novos cliente e outro para novos produtos, ao clicar, o usuário sera direcionado para o formulário especifico, ao preencher os dados, será validado se tudo estiver de acordo, os dados serrão armazenados no localStorage do browser. Essa aplicação tem apenas como intuito, apredizagem e possui todos os direitos reservados.
 
 # Tecnologias utilizadas
 ## Front end
