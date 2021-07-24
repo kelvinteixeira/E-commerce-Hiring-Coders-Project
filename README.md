@@ -1,7 +1,7 @@
 # E-commerce Hiring Coders Project
 
 # Sobre o projeto
-<!-- https://programminglife.netlify.app/ -->
+https://hiringcodersecommerceproject.netlify.app/
 
 Esse projeto é uma aplicação simples em web construída durante a edição 2021 Hiring Coders, evento organizado pela [GamaAcademy](https://www.gama.academy/ "Site da Gama Academy") e [VTEX](https://vtex.com/br-pt/ "Site da VTEX")  
  
