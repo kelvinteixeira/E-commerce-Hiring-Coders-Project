@@ -12,7 +12,6 @@ export default function SingIn() {
    const [descricao, setDescricao] = useState('')
    const [preco, setPreco] = useState('')
    const [quantidade, setQuantidade] = useState('')
-   const [error, setError] = useState('')
 
    function cadastrarProduct(event) {
       event.preventDefault()
