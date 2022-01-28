@@ -7,6 +7,8 @@ Esse projeto é uma aplicação simples em web construída durante a edição 20
  
 A aplicação consiste em uma página principal com dois botões para cadastramento, um para novos cliente e outro para novos produtos, ao clicar, o usuário sera direcionado para o formulário especifico, ao preencher os dados, será validado se tudo estiver de acordo, os dados serrão armazenados no localStorage do browser. Essa aplicação tem apenas como intuito, apredizagem e possui todos os direitos reservados.
 
+#### <div align="right">- Projeto Finalizado🟢 <div>
+
 # Tecnologias utilizadas
 ## Front end
 - HTML 
